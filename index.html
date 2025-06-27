@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery list</title>
+    <link rel="icon" href="logo.jpg">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: url(bg3.jpg);
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: left;
+            background-color: white;
+            display: flex;
+            justify-content: flex-start;
+            
+        }
+        .main-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 900px;
+            margin-top: 100px;
+            border: none;
+           background-color: wheat;
+           padding-left: 40px;
+           padding-right: 40px;
+           padding-bottom: 260px;
+           box-shadow: 10px 20px 20px rgb(108, 96, 74);
+            
+            
+
+        }
+        .container1{
+           
+           padding: auto;
+           align-items: center;
+
+        }
+        @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+         }
+        #h1,h2{
+            font-size: 50px;
+            font-family: system-ui,  'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 400;
+            color: rgb(111, 24, 24);
+             animation: fadeIn 1s ease-in 0s 1 normal forwards;
+       
+        }
+        #h11{
+            font-size: 40px;
+            margin-top: 1cm;
+            color: rgb(48, 21, 3);
+
+        }
+        #input{
+            padding-top: 10px;
+            padding-left: 100px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            font-size: 15px;
+            margin-top: 1.1cm;
+            font-weight: 400;
+        
+        }
+        #addBtn{
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            font-size: 15px;
+            margin-top: 1.1cm;
+            font-weight: 200;
+            background-color: orangered;
+            cursor: pointer;
+
+        }
+        #addBtn:hover{
+            background-color:orange;
+        }
+        #g-list li {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           gap: 10px;
+             }
+
+        .item-text {
+          flex: 1;
+         font-size: 16px;
+         }
+
+         .bought-btn,
+         .edit-btn,
+          .delete-btn {
+           padding: 6px 10px;
+          border: none;
+         border-radius: 6px;
+          cursor: pointer;
+           font-size: 16px;
+            transition: 0.3s;
+          }
+
+          .bought-btn {
+           background-color: #c4f0c4;
+             color: green;
+               }
+
+             .bought-btn:hover {
+              background-color: #a9e2a9;
+               }
+
+             .edit-btn {
+              background-color: #ffe6a7;
+              color: #cc7000;
+             }
+
+             .edit-btn:hover {
+              background-color: #ffd173;
+             }
+
+            .delete-btn {
+               background-color: #ffcaca;
+                color: red;
+                }
+
+           .delete-btn:hover {
+            background-color: #ffb3b3;
+          }
+
+      
+
+
+
+    </style>
+</head>
+<body>
+   
+   
+        <div class="main-container">
+            <div class="container1">
+                <center>
+                 <div class="div1">
+                 <h1 id="h1">Heyy Hii!!!</h1>
+                 <h2 id="h2">Welcome Back😃</h2>
+                 </div>
+                 </center>
+             </div>
+             
+             <div class="container2">
+                <center>
+                 <h1 id="h11">Grocery Lists</h1>
+                 <input id="input" type="text"  placeholder="🥕🥝Type here....🍰🍩">
+                 <button id="addBtn">Add</button>
+                 <ul id="g-list"></ul>
+                 </center>
+             </div>
+
+
+         </div>
+    
+ <script src="script.js"></script>   
+</body>
+</html>
